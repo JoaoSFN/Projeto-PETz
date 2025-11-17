@@ -53,24 +53,7 @@ class TelaInicial extends StatelessWidget {
                       Navigator.pushNamed(context, '/cadastroAdotante');
                     },
                     icon: Icon(Icons.person_add, color: Colors.white),
-                    label: Text('Cadastrar Adotante'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xFF6D4C41), // marrom meio escuro
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      padding: EdgeInsets.symmetric(vertical: 14, horizontal: 24),
-                    ),
-                  ),
-
-                  SizedBox(height: 16),
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/cadastroAnimal');
-                    },
-                    icon: Icon(Icons.pets, color: Colors.white),
-                    label: Text('Cadastrar Animal'),
+                    label: Text('Cadastrar'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFF6D4C41),
                       elevation: 4,
@@ -82,12 +65,13 @@ class TelaInicial extends StatelessWidget {
                   ),
 
                   SizedBox(height: 16),
+
                   ElevatedButton.icon(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/listaAnimais');
+                      Navigator.pushNamed(context, '/loginAdotante');
                     },
-                    icon: Icon(Icons.list, color: Colors.white),
-                    label: Text('Ver Animais Disponíveis'),
+                    icon: Icon(Icons.login, color: Colors.white),
+                    label: Text('Login'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFF6D4C41),
                       elevation: 4,

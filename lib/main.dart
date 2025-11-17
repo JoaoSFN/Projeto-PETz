@@ -4,8 +4,10 @@ import 'tela_cadastro_adotante.dart';
 import 'tela_cadastro_animal.dart';
 import 'tela_lista_animais.dart';
 import 'tela_detalhes_animal.dart';
+import 'tela_login_adotante.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(AdocaoAnimaisApp());
 }
 
@@ -13,13 +15,13 @@ class AdocaoAnimaisApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Adoção de Animais',
+      title: 'PETz',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Color(0xFFFFA726), // laranja suave
-        scaffoldBackgroundColor: Color(0xFFFFF8E1), // fundo creme
+        primaryColor: Color(0xFFEF6C00),
+        scaffoldBackgroundColor: Color(0xFFF3E5D8),
         appBarTheme: AppBarTheme(
-          backgroundColor: Color(0xFFFFA726),
+          backgroundColor: Color(0xFFEF6C00),
           centerTitle: true,
           elevation: 2,
           iconTheme: IconThemeData(color: Colors.white),
@@ -31,7 +33,7 @@ class AdocaoAnimaisApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFFFFA726),
+            backgroundColor: Color(0xFFEF6C00),
             foregroundColor: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -63,7 +65,7 @@ class AdocaoAnimaisApp extends StatelessWidget {
         '/cadastroAdotante': (context) => TelaCadastroAdotante(),
         '/cadastroAnimal': (context) => TelaCadastroAnimal(),
         '/listaAnimais': (context) => TelaListaAnimais(),
-        '/detalhesAnimal': (context) => TelaDetalhesAnimal(),
+        '/loginAdotante': (context) => TelaLoginAdotante(),
       },
     );
   }

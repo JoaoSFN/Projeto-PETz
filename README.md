@@ -1,6 +1,6 @@
 # petz
 
-A new Flutter project.
+Um projeto Flutter desenvolvido para uma matéria da FATEC Itapetininga
 
 ## Getting Started
 
